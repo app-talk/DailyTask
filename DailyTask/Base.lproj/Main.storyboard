@@ -68,6 +68,9 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="kWJ-ar-c8V" kind="show" id="g1A-Ql-jeN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -91,6 +94,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="904.58015267175574" y="-27.464788732394368"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="J23-WB-ogz">
+            <objects>
+                <viewController id="kWJ-ar-c8V" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MDd-0L-AjL" userLabel="RootView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jFS-ur-E63"/>
+                        <color key="backgroundColor" name="AppBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BMu-pv-8I5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRQ-hP-g5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950" y="-27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7E9-ns-sOX">
