@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,11 +12,24 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="DailyTask" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="RootView">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="gDr-5T-Qwe" userLabel="LogoImage">
+                                <rect key="frame" x="26" y="82" width="92" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ecB-yt-UeY"/>
+                                    <constraint firstAttribute="width" constant="92" id="rN3-S2-pQc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="AppBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gDr-5T-Qwe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="FO1-Em-nTt"/>
+                            <constraint firstItem="gDr-5T-Qwe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="f2A-ci-LHZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ReX-Gy-z7l"/>
                 </viewController>
@@ -43,8 +56,9 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Logo" width="93" height="64"/>
+        <namedColor name="AppBackgroundColor">
+            <color red="0.12941176470588237" green="0.15686274509803921" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
