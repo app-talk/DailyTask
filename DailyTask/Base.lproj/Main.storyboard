@@ -24,7 +24,10 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Persona" translatesAutoresizingMaskIntoConstraints="NO" id="FnW-Cs-jrG" userLabel="PersonaImage">
-                                <rect key="frame" x="26" y="181" width="334" height="330"/>
+                                <rect key="frame" x="26" y="181" width="334" height="260"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="YPP-tj-Wbu"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
