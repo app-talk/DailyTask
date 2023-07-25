@@ -328,16 +328,54 @@
                                                     <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="User"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evE-5U-Gph" userLabel="EmailAddress" customClass="TextInputField" customModule="DailyTask" customModuleProvider="target">
+                                                <rect key="frame" x="26" y="332" width="341" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="cI0-J4-qIa"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel" value="Email Address"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="someone@domain.com"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="UserTag"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showTrainingView" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19S-tq-2qy" userLabel="PasswordInput" customClass="TextInputField" customModule="DailyTask" customModuleProvider="target">
+                                                <rect key="frame" x="26" y="449" width="341" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="Wig-ID-sFQ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel" value="Password"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="password"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="Padlock"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showTrainingView" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" name="AppBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="19S-tq-2qy" firstAttribute="top" secondItem="evE-5U-Gph" secondAttribute="bottom" constant="27" id="0HQ-IN-d3r"/>
                                             <constraint firstItem="j0w-CA-TEn" firstAttribute="top" secondItem="gsh-d5-H3B" secondAttribute="top" constant="20" id="0ya-3a-f4R"/>
                                             <constraint firstItem="SrJ-V5-0Yo" firstAttribute="leading" secondItem="gsh-d5-H3B" secondAttribute="leading" constant="26" id="51h-Ya-ISM"/>
                                             <constraint firstItem="SrJ-V5-0Yo" firstAttribute="top" secondItem="j0w-CA-TEn" secondAttribute="bottom" constant="50" id="5bO-Lk-t0g"/>
                                             <constraint firstItem="8BC-tU-cUi" firstAttribute="leading" secondItem="gsh-d5-H3B" secondAttribute="leading" constant="26" id="Eu9-jL-T2I"/>
                                             <constraint firstItem="8BC-tU-cUi" firstAttribute="trailing" secondItem="gsh-d5-H3B" secondAttribute="trailing" constant="-26" id="JZK-Ou-DjB"/>
+                                            <constraint firstItem="evE-5U-Gph" firstAttribute="trailing" secondItem="8BC-tU-cUi" secondAttribute="trailing" id="Tf9-dV-6Hc"/>
                                             <constraint firstItem="8BC-tU-cUi" firstAttribute="top" secondItem="SrJ-V5-0Yo" secondAttribute="bottom" constant="23" id="X6M-kZ-kA3"/>
                                             <constraint firstItem="SrJ-V5-0Yo" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gsh-d5-H3B" secondAttribute="trailing" constant="-26" id="aeu-TH-xKH"/>
+                                            <constraint firstItem="19S-tq-2qy" firstAttribute="trailing" secondItem="evE-5U-Gph" secondAttribute="trailing" id="ca8-gY-vx5"/>
+                                            <constraint firstItem="19S-tq-2qy" firstAttribute="leading" secondItem="8BC-tU-cUi" secondAttribute="leading" id="dpr-WO-LhR"/>
+                                            <constraint firstItem="evE-5U-Gph" firstAttribute="leading" secondItem="8BC-tU-cUi" secondAttribute="leading" id="q0u-uS-3Zn"/>
+                                            <constraint firstItem="evE-5U-Gph" firstAttribute="top" secondItem="8BC-tU-cUi" secondAttribute="bottom" constant="27" id="xzD-RX-7Uj"/>
                                             <constraint firstItem="j0w-CA-TEn" firstAttribute="centerX" secondItem="gsh-d5-H3B" secondAttribute="centerX" id="zdI-eL-tgJ"/>
                                         </constraints>
                                     </view>
