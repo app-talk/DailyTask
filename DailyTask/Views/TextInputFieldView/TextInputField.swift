@@ -7,37 +7,37 @@
 
 import UIKit
 
-class TextInputField: UIView {
+
+@IBDesignable class TextInputField: UIView {
     
     override init(frame: CGRect = CGRect.zero) {
         super.init(frame: frame)
-        configure()
+        initializeAndConfigure()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        configure()
+        initializeAndConfigure()
     }
     
-    private func configure() {
-        let view = loadNib()
+    private func initializeAndConfigure() {
+        guard let view = loadViewFromNib() else { return }
         addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.frame = bounds
         
         NSLayoutConstraint.activate([
-            view.leadingAnchor.constraint(equalTo: leadingAnchor),
             view.topAnchor.constraint(equalTo: topAnchor),
+            view.leadingAnchor.constraint(equalTo: leadingAnchor),
             trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            
         ])
     }
     
-    private func loadNib() -> UIView {
-        let bundleName = Bundle(for: type(of: self))
-        let nibName = String(describing: type(of: self))
-        let nib = UINib(nibName: nibName, bundle: bundleName)
-        let view = nib.instantiate(withOwner: nil, options: nil).first as! UIView
-        return view
+    private func loadViewFromNib() -> UIView? {
+        let nibName = String(describing: TextInputField.self)
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: nibName, bundle: bundle)
+        return nib.instantiate(withOwner: self, options: nil).first as? UIView
     }
-
 }
