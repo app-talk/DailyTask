@@ -13,7 +13,9 @@ import UIKit
     @IBOutlet weak var textInputContainer: UIView!
     @IBOutlet weak var leadingTagImage: UIImageView!
     @IBOutlet weak var inputTextField: UITextField!
-        
+    @IBOutlet weak var trailingActionButton: UIButton!
+    
+    
     @IBInspectable var titleLabel: String {
         set(value) { inputLabel.text = value }
         get { inputLabel.text.orEmpty() }
@@ -43,6 +45,10 @@ import UIKit
         get { inputTextField.isSecureTextEntry }
     }
     
+    @IBInspectable var showTrainingView: Bool {
+        set(value) { trailingActionButton.isHidden = !value }
+        get{ !trailingActionButton.isHidden }
+    }
     
     override init(frame: CGRect = CGRect.zero) {
         super.init(frame: frame)
@@ -60,6 +66,7 @@ import UIKit
         textInputContainer.prepareForInterfaceBuilder()
         leadingTagImage.prepareForInterfaceBuilder()
         inputTextField.prepareForInterfaceBuilder()
+        trailingActionButton.prepareForInterfaceBuilder()
     }
     
     func initializeAndConfigure() {
@@ -82,5 +89,14 @@ import UIKit
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: nibName, bundle: bundle)
         return nib.instantiate(withOwner: self, options: nil).first as? UIView
+    }
+    
+    
+    @IBAction func trailingActionButtonPressed(_ sender: UIButton) {
+        let isSecureTextEntry = inputTextField.isSecureTextEntry
+        inputTextField.isSecureTextEntry = !isSecureTextEntry
+        let image = isSecureTextEntry ? UIImage(systemName: "eye.slash") : UIImage(systemName: "eye")
+        trailingActionButton.setImage(image, for: .normal)
+        
     }
 }

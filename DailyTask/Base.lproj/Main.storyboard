@@ -131,6 +131,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="supportsSecureText" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="supportsTextVisibility" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showTrainingView" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-G1-T6w" userLabel="PasswordTextInput" customClass="TextInputField" customModule="DailyTask" customModuleProvider="target">
@@ -144,10 +145,11 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleLabel" value="Password"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Password"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="supportsSecureText" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="supportsTextVisibility" value="NO"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="Padlock"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showTrainingView" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
