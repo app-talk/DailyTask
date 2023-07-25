@@ -122,6 +122,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="etp-wB-uVZ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel" value="Email Address"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="someone@domain.com"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="supportsSecureText" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jFS-ur-E63"/>
