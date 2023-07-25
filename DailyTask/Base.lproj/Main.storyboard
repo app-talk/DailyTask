@@ -112,13 +112,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7g-eN-Bmm" userLabel="CreateAccountLabel">
-                                <rect key="frame" x="20" y="194" width="353" height="31.333333333333343"/>
+                                <rect key="frame" x="20" y="209" width="353" height="31.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" name="ColorWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osk-1x-s3M" userLabel="EmailTextInput" customClass="TextInputField" customModule="DailyTask" customModuleProvider="target">
-                                <rect key="frame" x="20" y="248.33333333333337" width="353" height="90"/>
+                                <rect key="frame" x="20" y="263.33333333333331" width="353" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="7lk-wO-l3h"/>
                                 </constraints>
@@ -134,7 +134,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-G1-T6w" userLabel="PasswordTextInput" customClass="TextInputField" customModule="DailyTask" customModuleProvider="target">
-                                <rect key="frame" x="20" y="361.33333333333331" width="353" height="90"/>
+                                <rect key="frame" x="20" y="376.33333333333331" width="353" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="F7q-nY-4yG"/>
                                 </constraints>
@@ -151,13 +151,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldl-G5-YZX" userLabel="ForgotPasswordLabel">
-                                <rect key="frame" x="20" y="478.33333333333331" width="353" height="19.333333333333314"/>
+                                <rect key="frame" x="20" y="493.33333333333331" width="353" height="19.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" name="LabelColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-ms-guI" userLabel="LoginButton">
-                                <rect key="frame" x="20" y="530.66666666666663" width="353" height="60"/>
+                                <rect key="frame" x="20" y="545.66666666666663" width="353" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="fKK-UT-apJ"/>
                                 </constraints>
@@ -180,7 +180,7 @@
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-Bw-KLY" userLabel="HorizontalDivider">
-                                <rect key="frame" x="20" y="615.66666666666663" width="353" height="19.333333333333371"/>
+                                <rect key="frame" x="20" y="635.66666666666663" width="353" height="19.333333333333371"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulr-1T-NCD" userLabel="LeftHorizontalDivider">
                                         <rect key="frame" x="0.0" y="9.3333333333333712" width="111" height="1"/>
@@ -204,17 +204,51 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNW-uz-H5v" userLabel="GoogleButton">
+                                <rect key="frame" x="26" y="682" width="341" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QP5-Ax-ubP"/>
+                                </constraints>
+                                <color key="tintColor" name="ColorWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="GoogleLogo" title="Google" imagePadding="12">
+                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                        <color key="strokeColor" name="ColorWhite"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="center" distribution="equalCentering" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xpE-7A-syv" userLabel="SignUpButton">
+                                <rect key="frame" x="77.666666666666671" y="758.66666666666663" width="237.66666666666663" height="19.333333333333371"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abT-UW-Qri" userLabel="Description">
+                                        <rect key="frame" x="0.0" y="0.0" width="170.33333333333334" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" name="LabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8S-2s-eVc">
+                                        <rect key="frame" x="180.33333333333331" y="0.0" width="57.333333333333343" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jFS-ur-E63"/>
                         <color key="backgroundColor" name="AppBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qbU-ac-r0K" firstAttribute="centerX" secondItem="MDd-0L-AjL" secondAttribute="centerX" id="2yd-Cn-Gtz"/>
+                            <constraint firstItem="jFS-ur-E63" firstAttribute="bottom" secondItem="xpE-7A-syv" secondAttribute="bottom" constant="40" id="4Qr-Ea-Uzw"/>
+                            <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="PNW-uz-H5v" secondAttribute="trailing" constant="26" id="4qJ-cy-h8b"/>
                             <constraint firstItem="qbU-ac-r0K" firstAttribute="top" secondItem="jFS-ur-E63" secondAttribute="top" constant="20" id="6Jo-76-HIG"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="leading" secondItem="Osk-1x-s3M" secondAttribute="leading" id="9Ug-hP-aO3"/>
                             <constraint firstItem="FdW-ms-guI" firstAttribute="leading" secondItem="elZ-G1-T6w" secondAttribute="leading" id="Bax-0F-uqG"/>
+                            <constraint firstItem="PNW-uz-H5v" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="26" id="EJZ-SV-eC6"/>
                             <constraint firstItem="Osk-1x-s3M" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="20" id="FyI-sp-IPZ"/>
                             <constraint firstItem="Osk-1x-s3M" firstAttribute="top" secondItem="W7g-eN-Bmm" secondAttribute="bottom" constant="23" id="GCO-Rd-KVi"/>
-                            <constraint firstItem="W7g-eN-Bmm" firstAttribute="top" secondItem="qbU-ac-r0K" secondAttribute="bottom" constant="25" id="IBf-aR-Cft"/>
+                            <constraint firstItem="W7g-eN-Bmm" firstAttribute="top" secondItem="qbU-ac-r0K" secondAttribute="bottom" constant="40" id="IBf-aR-Cft"/>
                             <constraint firstItem="Cve-Bw-KLY" firstAttribute="leading" secondItem="elZ-G1-T6w" secondAttribute="leading" id="T4w-X0-EDV"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="trailing" secondItem="FdW-ms-guI" secondAttribute="trailing" id="UOS-mj-Agq"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="trailing" secondItem="Cve-Bw-KLY" secondAttribute="trailing" id="UpO-0r-MwR"/>
@@ -223,10 +257,12 @@
                             <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="Osk-1x-s3M" secondAttribute="trailing" constant="20" id="cUE-hg-hcM"/>
                             <constraint firstItem="ldl-G5-YZX" firstAttribute="leading" secondItem="elZ-G1-T6w" secondAttribute="leading" id="gmn-NB-QMo"/>
                             <constraint firstItem="Osk-1x-s3M" firstAttribute="trailing" secondItem="elZ-G1-T6w" secondAttribute="trailing" id="iVg-9M-Kzy"/>
-                            <constraint firstItem="Cve-Bw-KLY" firstAttribute="top" secondItem="FdW-ms-guI" secondAttribute="bottom" constant="25" id="myZ-sI-TSu"/>
+                            <constraint firstItem="Cve-Bw-KLY" firstAttribute="top" secondItem="FdW-ms-guI" secondAttribute="bottom" constant="30" id="myZ-sI-TSu"/>
                             <constraint firstItem="FdW-ms-guI" firstAttribute="top" secondItem="ldl-G5-YZX" secondAttribute="bottom" constant="33" id="onh-1I-fZE"/>
+                            <constraint firstItem="PNW-uz-H5v" firstAttribute="top" secondItem="Cve-Bw-KLY" secondAttribute="bottom" constant="27" id="s5F-G9-Fcs"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="trailing" secondItem="ldl-G5-YZX" secondAttribute="trailing" id="tkE-CM-nUP"/>
                             <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="W7g-eN-Bmm" secondAttribute="trailing" constant="20" id="wLT-yx-gMA"/>
+                            <constraint firstItem="xpE-7A-syv" firstAttribute="centerX" secondItem="MDd-0L-AjL" secondAttribute="centerX" id="wbX-sQ-XHE"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="top" secondItem="Osk-1x-s3M" secondAttribute="bottom" constant="23" id="zf7-Sy-H9x"/>
                         </constraints>
                     </view>
@@ -264,6 +300,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="GoogleLogo" width="24" height="24"/>
         <image name="Logo" width="93" height="64"/>
         <image name="Padlock" width="24" height="24"/>
         <image name="Persona" width="369" height="330"/>
