@@ -18,6 +18,7 @@
 		6E5324732A6F9559002BFB49 /* TextInputField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5324722A6F9559002BFB49 /* TextInputField.xib */; };
 		6E5324752A6F957A002BFB49 /* TextInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5324742A6F957A002BFB49 /* TextInputField.swift */; };
 		6E820CE62A6FD693006AD12B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E820CE52A6FD693006AD12B /* StringExtensions.swift */; };
+		6EF206EE2A701EB2006E55B6 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF206ED2A701EB2006E55B6 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6E5324722A6F9559002BFB49 /* TextInputField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputField.xib; sourceTree = "<group>"; };
 		6E5324742A6F957A002BFB49 /* TextInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputField.swift; sourceTree = "<group>"; };
 		6E820CE52A6FD693006AD12B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		6EF206ED2A701EB2006E55B6 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		6E5324532A6F0388002BFB49 /* DailyTask */ = {
 			isa = PBXGroup;
 			children = (
+				6EF206EC2A701E90006E55B6 /* CreateAccount */,
 				6E820CE42A6FD67A006AD12B /* Extensions */,
 				6E53246B2A6F128D002BFB49 /* Views */,
 				6E5324682A6F0D25002BFB49 /* Login */,
@@ -112,6 +115,14 @@
 				6E820CE52A6FD693006AD12B /* StringExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6EF206EC2A701E90006E55B6 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				6EF206ED2A701EB2006E55B6 /* CreateAccountViewController.swift */,
+			);
+			path = CreateAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +201,7 @@
 				6E53246A2A6F0D4E002BFB49 /* LoginViewController.swift in Sources */,
 				6E53246F2A6F1310002BFB49 /* TextInputFieldView.swift in Sources */,
 				6E5324592A6F0388002BFB49 /* WelcomeViewController.swift in Sources */,
+				6EF206EE2A701EB2006E55B6 /* CreateAccountViewController.swift in Sources */,
 				6E5324552A6F0388002BFB49 /* AppDelegate.swift in Sources */,
 				6E5324752A6F957A002BFB49 /* TextInputField.swift in Sources */,
 				6E5324572A6F0388002BFB49 /* SceneDelegate.swift in Sources */,

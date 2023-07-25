@@ -234,6 +234,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="fhg-8H-Bgb" kind="show" id="Jag-mu-Z6n"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -282,6 +285,22 @@
                 </view>
             </objects>
             <point key="canvasLocation" x="1948.854961832061" y="-27.464788732394368"/>
+        </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="fx5-bz-qS7">
+            <objects>
+                <viewController id="fhg-8H-Bgb" customClass="CreateAccountViewController" customModule="DailyTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lk7-gP-SrG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jMq-4o-Sik"/>
+                        <color key="backgroundColor" name="AppBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Eq-wK-RQG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oa9-Zv-H2x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2943" y="-23"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7E9-ns-sOX">
