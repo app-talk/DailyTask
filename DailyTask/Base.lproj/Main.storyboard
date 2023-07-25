@@ -130,7 +130,6 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="someone@domain.com"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="supportsSecureText" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="supportsTextVisibility" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showTrainingView" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -147,7 +146,6 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Password"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="supportsSecureText" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="supportsTextVisibility" value="NO"/>
                                     <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="Padlock"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showTrainingView" value="YES"/>
                                 </userDefinedRuntimeAttributes>
