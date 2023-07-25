@@ -112,15 +112,15 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7g-eN-Bmm" userLabel="CreateAccountLabel">
-                                <rect key="frame" x="26" y="194" width="341" height="32"/>
+                                <rect key="frame" x="20" y="194" width="353" height="31.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" name="ColorWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osk-1x-s3M" userLabel="EmailTextInput" customClass="TextInputField" customModule="DailyTask" customModuleProvider="target">
-                                <rect key="frame" x="26" y="246" width="341" height="90"/>
+                                <rect key="frame" x="20" y="248.33333333333337" width="353" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="etp-wB-uVZ"/>
+                                    <constraint firstAttribute="height" constant="90" id="7lk-wO-l3h"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -130,20 +130,41 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="someone@domain.com"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="supportsSecureText" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="supportsTextVisibility" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-G1-T6w" userLabel="PasswordTextInput" customClass="TextInputField" customModule="DailyTask" customModuleProvider="target">
+                                <rect key="frame" x="20" y="361.33333333333331" width="353" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="F7q-nY-4yG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel" value="Password"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Enter Password"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="supportsSecureText" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="supportsTextVisibility" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="Padlock"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jFS-ur-E63"/>
                         <color key="backgroundColor" name="AppBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qbU-ac-r0K" firstAttribute="centerX" secondItem="MDd-0L-AjL" secondAttribute="centerX" id="1hf-5y-CPF"/>
-                            <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="W7g-eN-Bmm" secondAttribute="trailing" constant="26" id="FaT-dy-MDK"/>
-                            <constraint firstItem="W7g-eN-Bmm" firstAttribute="top" secondItem="qbU-ac-r0K" secondAttribute="bottom" constant="25" id="Ggl-dB-S9W"/>
-                            <constraint firstItem="qbU-ac-r0K" firstAttribute="top" secondItem="jFS-ur-E63" secondAttribute="top" constant="20" id="dam-eI-3cZ"/>
-                            <constraint firstItem="Osk-1x-s3M" firstAttribute="top" secondItem="W7g-eN-Bmm" secondAttribute="bottom" constant="20" id="eHg-TC-Azi"/>
-                            <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="Osk-1x-s3M" secondAttribute="trailing" constant="26" id="eUl-0a-lCP"/>
-                            <constraint firstItem="Osk-1x-s3M" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="26" id="gmz-93-ngb"/>
-                            <constraint firstItem="W7g-eN-Bmm" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="26" id="iH7-CD-Dha"/>
+                            <constraint firstItem="qbU-ac-r0K" firstAttribute="centerX" secondItem="MDd-0L-AjL" secondAttribute="centerX" id="2yd-Cn-Gtz"/>
+                            <constraint firstItem="qbU-ac-r0K" firstAttribute="top" secondItem="jFS-ur-E63" secondAttribute="top" constant="20" id="6Jo-76-HIG"/>
+                            <constraint firstItem="elZ-G1-T6w" firstAttribute="leading" secondItem="Osk-1x-s3M" secondAttribute="leading" id="9Ug-hP-aO3"/>
+                            <constraint firstItem="Osk-1x-s3M" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="20" id="FyI-sp-IPZ"/>
+                            <constraint firstItem="Osk-1x-s3M" firstAttribute="top" secondItem="W7g-eN-Bmm" secondAttribute="bottom" constant="23" id="GCO-Rd-KVi"/>
+                            <constraint firstItem="W7g-eN-Bmm" firstAttribute="top" secondItem="qbU-ac-r0K" secondAttribute="bottom" constant="25" id="IBf-aR-Cft"/>
+                            <constraint firstItem="W7g-eN-Bmm" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="20" id="bcz-EX-K0Z"/>
+                            <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="Osk-1x-s3M" secondAttribute="trailing" constant="20" id="cUE-hg-hcM"/>
+                            <constraint firstItem="Osk-1x-s3M" firstAttribute="trailing" secondItem="elZ-G1-T6w" secondAttribute="trailing" id="iVg-9M-Kzy"/>
+                            <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="W7g-eN-Bmm" secondAttribute="trailing" constant="20" id="wLT-yx-gMA"/>
+                            <constraint firstItem="elZ-G1-T6w" firstAttribute="top" secondItem="Osk-1x-s3M" secondAttribute="bottom" constant="23" id="zf7-Sy-H9x"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BMu-pv-8I5"/>
@@ -172,6 +193,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="93" height="64"/>
+        <image name="Padlock" width="24" height="24"/>
         <image name="Persona" width="369" height="330"/>
         <namedColor name="AccentColor">
             <color red="0.99607843137254903" green="0.82745098039215681" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

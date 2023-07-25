@@ -13,7 +13,6 @@
                 <outlet property="inputLabel" destination="uy6-qL-30b" id="LHe-Ud-NCa"/>
                 <outlet property="inputTextField" destination="Te3-eh-6eg" id="V7C-r0-NP3"/>
                 <outlet property="leadingTagImage" destination="JT3-Qh-chU" id="DCY-hE-C4t"/>
-                <outlet property="tailingTagImage" destination="AZO-md-D2q" id="h4z-Dc-Mjp"/>
                 <outlet property="textInputContainer" destination="HdC-xy-4Ch" id="MUB-oH-ivl"/>
             </connections>
         </placeholder>
@@ -52,11 +51,11 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZO-md-D2q">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlb-I0-ASp">
                                     <rect key="frame" x="327" y="0.0" width="30" height="30"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="30" id="Mgf-o5-7mO"/>
-                                        <constraint firstAttribute="height" constant="30" id="m1i-sF-tq6"/>
+                                        <constraint firstAttribute="height" constant="30" id="Du9-en-Qqb"/>
+                                        <constraint firstAttribute="width" constant="30" id="KBs-58-FL4"/>
                                     </constraints>
                                     <color key="tintColor" name="ColorWhite"/>
                                     <state key="normal" title="Button"/>

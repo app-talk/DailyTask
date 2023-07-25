@@ -8,15 +8,12 @@
 import UIKit
 
 
-@IBDesignable class TextInputField: UIView {
+@IBDesignable open class TextInputField: UIView {
     @IBOutlet weak var inputLabel: UILabel!
     @IBOutlet weak var textInputContainer: UIView!
     @IBOutlet weak var leadingTagImage: UIImageView!
     @IBOutlet weak var inputTextField: UITextField!
-    @IBOutlet weak var tailingTagImage: UIButton!
-    
-    @IBInspectable var supportsTextVisibility: Bool = false
-    
+        
     @IBInspectable var titleLabel: String {
         set(value) { inputLabel.text = value }
         get { inputLabel.text.orEmpty() }
@@ -32,10 +29,6 @@ import UIKit
         get { leadingTagImage.image }
     }
     
-    @IBInspectable var trailingImage: UIImage? {
-        set(value) { tailingTagImage.setImage(value, for: .normal) }
-        get { tailingTagImage.image(for: .normal) }
-    }
     
     @IBInspectable var cornerRadius: Int {
         set(value) { textInputContainer.layer.cornerRadius = CGFloat(value) }
@@ -43,7 +36,10 @@ import UIKit
     }
     
     @IBInspectable var isSecureTextEntry: Bool {
-        set(value) { inputTextField.isSecureTextEntry = value }
+        set(value) {
+            inputTextField.isSecureTextEntry = value
+            
+        }
         get { inputTextField.isSecureTextEntry }
     }
     
@@ -53,24 +49,17 @@ import UIKit
         initializeAndConfigure()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         initializeAndConfigure()
     }
     
-    override func prepareForInterfaceBuilder() {
+    open override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         inputLabel.prepareForInterfaceBuilder()
         textInputContainer.prepareForInterfaceBuilder()
         leadingTagImage.prepareForInterfaceBuilder()
         inputTextField.prepareForInterfaceBuilder()
-        tailingTagImage.prepareForInterfaceBuilder()
-        
-        update()
-    }
-    
-    func update() {
-        tailingTagImage.isHidden = !supportsTextVisibility
     }
     
     func initializeAndConfigure() {
@@ -79,14 +68,13 @@ import UIKit
         view.translatesAutoresizingMaskIntoConstraints = false
         view.frame = bounds
         
+        
         NSLayoutConstraint.activate([
             view.topAnchor.constraint(equalTo: topAnchor),
             view.leadingAnchor.constraint(equalTo: leadingAnchor),
             trailingAnchor.constraint(equalTo: view.trailingAnchor),
             bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
-        
-        update()
     }
     
     private func loadViewFromNib() -> UIView? {
