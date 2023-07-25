@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextInputField" customModule="DailyTask" customModuleProvider="target">
+            <connections>
+                <outlet property="inputLabel" destination="uy6-qL-30b" id="LHe-Ud-NCa"/>
+                <outlet property="inputTextField" destination="Te3-eh-6eg" id="V7C-r0-NP3"/>
+                <outlet property="leadingTagImage" destination="JT3-Qh-chU" id="DCY-hE-C4t"/>
+                <outlet property="textInputContainer" destination="HdC-xy-4Ch" id="MUB-oH-ivl"/>
+                <outlet property="trailingActionButton" destination="Hlb-I0-ASp" id="CEc-HN-vXn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uy6-qL-30b" userLabel="Label">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="21.666666666666668"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" name="LabelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdC-xy-4Ch" userLabel="InputContainer">
+                    <rect key="frame" x="0.0" y="35.666666666666657" width="393" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-zQ-uYq">
+                            <rect key="frame" x="18" y="15" width="357" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserTag" translatesAutoresizingMaskIntoConstraints="NO" id="JT3-Qh-chU">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="GDk-5C-PsE"/>
+                                        <constraint firstAttribute="width" constant="30" id="H1g-Z4-qtf"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Te3-eh-6eg" userLabel="TextField">
+                                    <rect key="frame" x="45" y="0.0" width="267" height="30"/>
+                                    <color key="textColor" name="ColorWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                            <color key="value" name="ColorWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlb-I0-ASp">
+                                    <rect key="frame" x="327" y="0.0" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="Du9-en-Qqb"/>
+                                        <constraint firstAttribute="width" constant="30" id="KBs-58-FL4"/>
+                                    </constraints>
+                                    <color key="tintColor" name="ColorWhite"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="eye" catalog="system"/>
+                                    <connections>
+                                        <action selector="trailingActionButtonPressed:" destination="-1" eventType="touchUpInside" id="CdO-4I-NdZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="TextInputBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="48e-9R-Ow1"/>
+                        <constraint firstAttribute="trailing" secondItem="4S2-zQ-uYq" secondAttribute="trailing" constant="18" id="JBe-EP-gzZ"/>
+                        <constraint firstItem="4S2-zQ-uYq" firstAttribute="leading" secondItem="HdC-xy-4Ch" secondAttribute="leading" constant="18" id="T8B-Ez-Fvw"/>
+                        <constraint firstAttribute="bottom" secondItem="4S2-zQ-uYq" secondAttribute="bottom" constant="15" id="n4v-Qt-Gfa"/>
+                        <constraint firstItem="4S2-zQ-uYq" firstAttribute="top" secondItem="HdC-xy-4Ch" secondAttribute="top" constant="15" id="r3N-fH-U9M"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="HdC-xy-4Ch" firstAttribute="top" secondItem="uy6-qL-30b" secondAttribute="bottom" constant="14" id="Aro-xa-bPg"/>
+                <constraint firstItem="uy6-qL-30b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WUb-Mu-mrJ"/>
+                <constraint firstItem="uy6-qL-30b" firstAttribute="trailing" secondItem="HdC-xy-4Ch" secondAttribute="trailing" id="Wqh-GT-cLa"/>
+                <constraint firstItem="HdC-xy-4Ch" firstAttribute="leading" secondItem="uy6-qL-30b" secondAttribute="leading" id="dm5-Bg-NnN"/>
+                <constraint firstItem="uy6-qL-30b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fFd-3X-ljx"/>
+                <constraint firstAttribute="trailing" secondItem="uy6-qL-30b" secondAttribute="trailing" id="gBp-hb-s39"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-129" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="UserTag" width="24" height="24"/>
+        <image name="eye" catalog="system" width="128" height="79"/>
+        <namedColor name="ColorWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelColor">
+            <color red="0.5490196078431373" green="0.66666666666666663" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextInputBackground">
+            <color red="0.27058823529411763" green="0.35294117647058826" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

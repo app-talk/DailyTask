@@ -14,6 +14,11 @@
 		6E53245E2A6F0388002BFB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E53245D2A6F0388002BFB49 /* Assets.xcassets */; };
 		6E5324612A6F0388002BFB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E53245F2A6F0388002BFB49 /* LaunchScreen.storyboard */; };
 		6E53246A2A6F0D4E002BFB49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5324692A6F0D4E002BFB49 /* LoginViewController.swift */; };
+		6E53246F2A6F1310002BFB49 /* TextInputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53246E2A6F1310002BFB49 /* TextInputFieldView.swift */; };
+		6E5324732A6F9559002BFB49 /* TextInputField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5324722A6F9559002BFB49 /* TextInputField.xib */; };
+		6E5324752A6F957A002BFB49 /* TextInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5324742A6F957A002BFB49 /* TextInputField.swift */; };
+		6E820CE62A6FD693006AD12B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E820CE52A6FD693006AD12B /* StringExtensions.swift */; };
+		6EF206EE2A701EB2006E55B6 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF206ED2A701EB2006E55B6 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		6E5324602A6F0388002BFB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E5324622A6F0388002BFB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E5324692A6F0D4E002BFB49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6E53246E2A6F1310002BFB49 /* TextInputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputFieldView.swift; sourceTree = "<group>"; };
+		6E5324722A6F9559002BFB49 /* TextInputField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputField.xib; sourceTree = "<group>"; };
+		6E5324742A6F957A002BFB49 /* TextInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputField.swift; sourceTree = "<group>"; };
+		6E820CE52A6FD693006AD12B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		6EF206ED2A701EB2006E55B6 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,9 @@
 		6E5324532A6F0388002BFB49 /* DailyTask */ = {
 			isa = PBXGroup;
 			children = (
+				6EF206EC2A701E90006E55B6 /* CreateAccount */,
+				6E820CE42A6FD67A006AD12B /* Extensions */,
+				6E53246B2A6F128D002BFB49 /* Views */,
 				6E5324682A6F0D25002BFB49 /* Login */,
 				6E5324542A6F0388002BFB49 /* AppDelegate.swift */,
 				6E5324562A6F0388002BFB49 /* SceneDelegate.swift */,
@@ -76,6 +89,40 @@
 				6E5324692A6F0D4E002BFB49 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		6E53246B2A6F128D002BFB49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E53246D2A6F12DD002BFB49 /* TextInputFieldView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E53246D2A6F12DD002BFB49 /* TextInputFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				6E53246E2A6F1310002BFB49 /* TextInputFieldView.swift */,
+				6E5324722A6F9559002BFB49 /* TextInputField.xib */,
+				6E5324742A6F957A002BFB49 /* TextInputField.swift */,
+			);
+			path = TextInputFieldView;
+			sourceTree = "<group>";
+		};
+		6E820CE42A6FD67A006AD12B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E820CE52A6FD693006AD12B /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6EF206EC2A701E90006E55B6 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				6EF206ED2A701EB2006E55B6 /* CreateAccountViewController.swift */,
+			);
+			path = CreateAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5324732A6F9559002BFB49 /* TextInputField.xib in Resources */,
 				6E5324612A6F0388002BFB49 /* LaunchScreen.storyboard in Resources */,
 				6E53245E2A6F0388002BFB49 /* Assets.xcassets in Resources */,
 				6E53245C2A6F0388002BFB49 /* Main.storyboard in Resources */,
@@ -149,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E820CE62A6FD693006AD12B /* StringExtensions.swift in Sources */,
 				6E53246A2A6F0D4E002BFB49 /* LoginViewController.swift in Sources */,
+				6E53246F2A6F1310002BFB49 /* TextInputFieldView.swift in Sources */,
 				6E5324592A6F0388002BFB49 /* WelcomeViewController.swift in Sources */,
+				6EF206EE2A701EB2006E55B6 /* CreateAccountViewController.swift in Sources */,
 				6E5324552A6F0388002BFB49 /* AppDelegate.swift in Sources */,
+				6E5324752A6F957A002BFB49 /* TextInputField.swift in Sources */,
 				6E5324572A6F0388002BFB49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
