@@ -58,9 +58,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoW-3p-xQ6" userLabel="StartButton">
-                                <rect key="frame" x="26" y="734" width="334" height="54"/>
+                                <rect key="frame" x="26" y="728" width="334" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="Ghg-V9-0li"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ghg-V9-0li"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Let’s Start">
@@ -150,6 +150,35 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showTrainingView" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldl-G5-YZX" userLabel="ForgotPasswordLabel">
+                                <rect key="frame" x="20" y="478.33333333333331" width="353" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="LabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-ms-guI" userLabel="LoginButton">
+                                <rect key="frame" x="20" y="531.33333333333337" width="353" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="fKK-UT-apJ"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Log In">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jFS-ur-E63"/>
                         <color key="backgroundColor" name="AppBackgroundColor"/>
@@ -157,12 +186,18 @@
                             <constraint firstItem="qbU-ac-r0K" firstAttribute="centerX" secondItem="MDd-0L-AjL" secondAttribute="centerX" id="2yd-Cn-Gtz"/>
                             <constraint firstItem="qbU-ac-r0K" firstAttribute="top" secondItem="jFS-ur-E63" secondAttribute="top" constant="20" id="6Jo-76-HIG"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="leading" secondItem="Osk-1x-s3M" secondAttribute="leading" id="9Ug-hP-aO3"/>
+                            <constraint firstItem="FdW-ms-guI" firstAttribute="leading" secondItem="elZ-G1-T6w" secondAttribute="leading" id="Bax-0F-uqG"/>
                             <constraint firstItem="Osk-1x-s3M" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="20" id="FyI-sp-IPZ"/>
                             <constraint firstItem="Osk-1x-s3M" firstAttribute="top" secondItem="W7g-eN-Bmm" secondAttribute="bottom" constant="23" id="GCO-Rd-KVi"/>
                             <constraint firstItem="W7g-eN-Bmm" firstAttribute="top" secondItem="qbU-ac-r0K" secondAttribute="bottom" constant="25" id="IBf-aR-Cft"/>
+                            <constraint firstItem="elZ-G1-T6w" firstAttribute="trailing" secondItem="FdW-ms-guI" secondAttribute="trailing" id="UOS-mj-Agq"/>
+                            <constraint firstItem="ldl-G5-YZX" firstAttribute="top" secondItem="elZ-G1-T6w" secondAttribute="bottom" constant="27" id="V0B-SB-HLG"/>
                             <constraint firstItem="W7g-eN-Bmm" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="20" id="bcz-EX-K0Z"/>
                             <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="Osk-1x-s3M" secondAttribute="trailing" constant="20" id="cUE-hg-hcM"/>
+                            <constraint firstItem="ldl-G5-YZX" firstAttribute="leading" secondItem="elZ-G1-T6w" secondAttribute="leading" id="gmn-NB-QMo"/>
                             <constraint firstItem="Osk-1x-s3M" firstAttribute="trailing" secondItem="elZ-G1-T6w" secondAttribute="trailing" id="iVg-9M-Kzy"/>
+                            <constraint firstItem="FdW-ms-guI" firstAttribute="top" secondItem="ldl-G5-YZX" secondAttribute="bottom" constant="33" id="onh-1I-fZE"/>
+                            <constraint firstItem="elZ-G1-T6w" firstAttribute="trailing" secondItem="ldl-G5-YZX" secondAttribute="trailing" id="tkE-CM-nUP"/>
                             <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="W7g-eN-Bmm" secondAttribute="trailing" constant="20" id="wLT-yx-gMA"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="top" secondItem="Osk-1x-s3M" secondAttribute="bottom" constant="23" id="zf7-Sy-H9x"/>
                         </constraints>
@@ -203,6 +238,9 @@
         </namedColor>
         <namedColor name="ColorWhite">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelColor">
+            <color red="0.5490196078431373" green="0.66666666666666663" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
