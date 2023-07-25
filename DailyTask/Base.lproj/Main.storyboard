@@ -219,7 +219,7 @@
                                 </buttonConfiguration>
                             </button>
                             <stackView opaque="NO" contentMode="center" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xpE-7A-syv" userLabel="SignUpButton">
-                                <rect key="frame" x="70.666666666666671" y="744.66666666666663" width="251.66666666666663" height="33.333333333333371"/>
+                                <rect key="frame" x="70.666666666666671" y="767" width="251.66666666666663" height="33.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abT-UW-Qri" userLabel="Description">
                                         <rect key="frame" x="0.0" y="6.9999999999999982" width="170.33333333333334" height="19.333333333333329"/>
@@ -242,7 +242,6 @@
                         <color key="backgroundColor" name="AppBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qbU-ac-r0K" firstAttribute="centerX" secondItem="MDd-0L-AjL" secondAttribute="centerX" id="2yd-Cn-Gtz"/>
-                            <constraint firstItem="jFS-ur-E63" firstAttribute="bottom" secondItem="xpE-7A-syv" secondAttribute="bottom" constant="40" id="4Qr-Ea-Uzw"/>
                             <constraint firstItem="jFS-ur-E63" firstAttribute="trailing" secondItem="PNW-uz-H5v" secondAttribute="trailing" constant="26" id="4qJ-cy-h8b"/>
                             <constraint firstItem="qbU-ac-r0K" firstAttribute="top" secondItem="jFS-ur-E63" secondAttribute="top" constant="20" id="6Jo-76-HIG"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="leading" secondItem="Osk-1x-s3M" secondAttribute="leading" id="9Ug-hP-aO3"/>
@@ -250,6 +249,7 @@
                             <constraint firstItem="PNW-uz-H5v" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="26" id="EJZ-SV-eC6"/>
                             <constraint firstItem="Osk-1x-s3M" firstAttribute="leading" secondItem="jFS-ur-E63" secondAttribute="leading" constant="20" id="FyI-sp-IPZ"/>
                             <constraint firstItem="Osk-1x-s3M" firstAttribute="top" secondItem="W7g-eN-Bmm" secondAttribute="bottom" constant="23" id="GCO-Rd-KVi"/>
+                            <constraint firstItem="xpE-7A-syv" firstAttribute="top" secondItem="PNW-uz-H5v" secondAttribute="bottom" constant="25" id="GTk-ro-1EH"/>
                             <constraint firstItem="W7g-eN-Bmm" firstAttribute="top" secondItem="qbU-ac-r0K" secondAttribute="bottom" constant="40" id="IBf-aR-Cft"/>
                             <constraint firstItem="Cve-Bw-KLY" firstAttribute="leading" secondItem="elZ-G1-T6w" secondAttribute="leading" id="T4w-X0-EDV"/>
                             <constraint firstItem="elZ-G1-T6w" firstAttribute="trailing" secondItem="FdW-ms-guI" secondAttribute="trailing" id="UOS-mj-Agq"/>
